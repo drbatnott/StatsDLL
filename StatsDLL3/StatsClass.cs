@@ -11,6 +11,12 @@ namespace StatsDLL3
         List<float> myList;
         private float total;
         private float mean;
+
+        public void AddData(float f) 
+        {
+            myList.Add(f);
+            total += f;
+        }
         public float Mean
         {
             get
