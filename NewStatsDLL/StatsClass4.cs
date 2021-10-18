@@ -86,7 +86,8 @@ namespace NewStatsDLL
                 median = dataList[m];
                 if ((dataList.Count % 2) == 0)
                 {
-                    median += dataList[m + 1];  
+                    float aboveAndBelowMedian = median + dataList[m - 1];//median is currently the number above  
+                    median = aboveAndBelowMedian / 2;
                 }
                 return median;
             }
