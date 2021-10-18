@@ -31,6 +31,7 @@ namespace UseNewStatsDLL
             statsClass4.AddData(f);
             testResultListBox.Items.Add("New data Item " + f);
             testResultListBox.Items.Add("Mean is now " + statsClass4.Mean);
+            testResultListBox.Items.Add("Median is now " + statsClass4.Median);
         }
     }
 }
